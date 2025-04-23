@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catalogue Devices - Carrefour</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .category-card {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+    .category-card img {
+      max-width: 80px;
+      margin-bottom: 1rem;
+    }
+    .banner-img {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="container-fluid border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://www.carrefour.com/themes/custom/c4com/img/logo_dark.svg" alt="Logo Carrefour" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Ordinateur</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Smartphone</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tablette</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">TR</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Salle de réunion</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Infos Pratiques</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Bannière image -->
+  <div class="container-fluid p-0">
+    <img src="./img/banner-catalogue.png" alt="Bannière Carrefour" class="banner-img w-100">
+  </div>
+
+  <!-- Section titre + carousel -->
+  <main class="container my-5">
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <h3>Ce catalogue est validé pour l’ensemble des usages Métiers et Bureautiques.</h3>
+      </div>
+      <div class="col-md-6">
+        <div id="carouselDevices" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="hover" data-bs-wrap="true">
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+              <img src="https://cdn-icons-png.flaticon.com/512/2907/2907310.png" class="d-block w-50" alt="Ordinateur">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png" class="d-block w-50" alt="Téléphone">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" class="d-block w-50" alt="TR">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn-icons-png.flaticon.com/512/1034/1034140.png" class="d-block w-50" alt="Accessoire">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDevices" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDevices" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cartes catégories -->
+    <div class="row g-4 mt-5">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2907/2907310.png" alt="Ordinateurs">
+          <h5>Ordinateurs</h5>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/747/747622.png" alt="Tablettes">
+          <h5>Tablettes</h5>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png" alt="Téléphones portables">
+          <h5>Téléphones portables</h5>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1034/1034140.png" alt="Accessoires">
+          <h5>Accessoires</h5>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" alt="TR">
+          <h5>TR</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <button class="btn btn-primary">Voir plus...</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-4 mt-5">
+    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d7/Carrefour_logo.svg/1200px-Carrefour_logo.svg.png" alt="Carrefour Logo" height="40">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
